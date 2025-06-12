@@ -1,18 +1,13 @@
-import React from 'react';
-import Main from './Home';
+import Main from './Main';
 
-function Home() {
-  let personas = [
-    { nombre: "Carlos", edad: 25 },
-    { nombre: "Natalia", edad: 20 }
-  ];
+const Home = (props) => {
+  const { nombre, persona, grupo } = props;
 
   return (
     <div>
-      <h2>Home</h2>
-      <Main personas={personas} />
+      <Main nombre={nombre} persona={persona} grupo={grupo} />
     </div>
   );
-}
+};
 
-export default Home;
+export default Home;
